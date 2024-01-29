@@ -1,4 +1,4 @@
-.andes {
+.fuji {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,9 +56,9 @@
   &__image {
     position: relative;
     img {
+      width: 560px;
       border-radius: 25px;
     }
-
     padding-top: 28px;
     padding-bottom: 48px;
   }
@@ -101,16 +101,18 @@
     width: 373px;
   }
 }
-.andes-overview {
+.fuji-overview {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+
   &__info {
     display: flex;
     align-items: center;
     gap: 32px;
     margin-bottom: 32px;
   }
+
   &__title {
     color: #1b1b1b;
     font-family: Inter;
@@ -125,7 +127,7 @@
     font-weight: 600;
   }
 }
-.andes-value {
+.fuji-value {
   display: flex;
   justify-content: flex-start;
   gap: 60px;
@@ -157,12 +159,12 @@
   }
 }
 
-.andes-buttom {
+.fuji-buttom {
   display: flex;
   flex-direction: column;
   gap: 16px;
   position: absolute;
-  top: 358px;
+  bottom: 80px;
   left: 24px;
   z-index: 1;
   border-radius: 15px;
@@ -171,6 +173,7 @@
   backdrop-filter: blur(20px);
   width: 331px;
   padding: 11px 12px 16px 16px;
+
   &__info {
     display: flex;
     justify-content: space-between;
@@ -183,6 +186,7 @@
     font-size: 24px;
     font-weight: 600;
   }
+
   &__text {
     color: #cac8c8;
     font-family: Roboto;
@@ -203,6 +207,9 @@
     font-family: Roboto;
     font-size: 18px;
     font-weight: 400;
+    img{
+        width: 22px;
+    }
   }
 
   &__price {

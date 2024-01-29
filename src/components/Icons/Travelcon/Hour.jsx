@@ -1,6 +1,7 @@
 export const Hour = () => {
   return (
-    <svg
+    <div className="andes-value__icon">
+        <svg
       xmlns="http://www.w3.org/2000/svg"
       width="16"
       height="16"
@@ -11,5 +12,7 @@ export const Hour = () => {
         fill="#3F3F3F"
       />
     </svg>
+    </div>
+  
   );
 };

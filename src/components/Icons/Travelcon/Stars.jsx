@@ -1,6 +1,7 @@
 export const Stars = () => {
   return (
-    <svg
+    <div className="andes-value__icon">
+       <svg
       xmlns="http://www.w3.org/2000/svg"
       width="17"
       height="17"
@@ -11,5 +12,7 @@ export const Stars = () => {
         fill="#3F3F3F"
       />
     </svg>
+    </div>
+   
   );
 };

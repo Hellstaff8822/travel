@@ -1,6 +1,6 @@
 import { NavLink, Route, Routes } from 'react-router-dom';
 import { Home } from './views/Home/Home';
-import { MountFuji } from './TravelPage/MoutFuji';
+import { MountFuji } from './TravelPage/MountFuji/MoutFuji';
 import { SplashScreen } from './components/SplashScreen';
 import { useState } from 'react';
 import { MenuIcon } from './components/Icons/MenuIcon';

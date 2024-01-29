@@ -1,6 +1,7 @@
 export const Temp = () => {
   return (
-    <svg
+    <div className="andes-value__icon">
+          <svg
       xmlns="http://www.w3.org/2000/svg"
       width="18"
       height="15"
@@ -11,5 +12,7 @@ export const Temp = () => {
         fill="#3F3F3F"
       />
     </svg>
+    </div>
+
   );
 };
