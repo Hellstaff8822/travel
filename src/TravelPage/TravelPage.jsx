@@ -1,9 +1,11 @@
+import { useNavigate } from 'react-router-dom';
 
 export const TravelPage = () => {
-  return (
-    <div className='travel'>
-        <Andes/>
-        <MountFuji/>
-    </div>
-  )
-}
+  const navigate = useNavigate();
+  const handleGoBack = () => {
+    navigate(-1);
+  };
+  return <button onClick={handleGoBack}>Back</button>;
+
+  
+};

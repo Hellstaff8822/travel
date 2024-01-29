@@ -32,7 +32,7 @@ export const HomeTravel = () => {
         initial="hidden"
         animate="visible">
         <motion.li variants={item} className="home-travel-item">
-          <Link to="/travel">
+          <Link to="/mountfuji">
             <HeartIcon />
             <img src="/travel.png" alt="travel" />
             <TravelFuji />
@@ -40,7 +40,7 @@ export const HomeTravel = () => {
         </motion.li>
 
         <motion.li variants={item} className="home-travel-item">
-          <Link to="/travel">
+          <Link to="/andes">
             <HeartIcon />
             <img src="/travel-img.png" alt="travel" />
             <TravelAndes />
@@ -48,7 +48,7 @@ export const HomeTravel = () => {
         </motion.li>
 
         <motion.li variants={item} className="home-travel-item">
-          <Link to="/travel">
+          <Link to="/mountfuji">
             <HeartIcon />
             <img src="/travel.png" alt="travel" />
             <TravelFuji />
@@ -56,7 +56,7 @@ export const HomeTravel = () => {
         </motion.li>
 
         <motion.li variants={item} className="home-travel-item">
-          <Link to="/travel">
+          <Link to="/andes">
             <HeartIcon />
             <img src="/travel-img.png" alt="travel" />
             <TravelAndes />
@@ -64,14 +64,14 @@ export const HomeTravel = () => {
         </motion.li>
 
         <motion.li variants={item} className="home-travel-item">
-          <Link to="/travel">
+          <Link to="/mountfuji">
             <HeartIcon />
             <img src="/travel.png" alt="travel" />
             <TravelFuji />
           </Link>
         </motion.li>
         <motion.li variants={item} className="home-travel-item">
-          <Link to="/travel">
+          <Link to="/andes">
             <HeartIcon />
             <img src="/travel-img.png" alt="travel" />
             <TravelAndes />

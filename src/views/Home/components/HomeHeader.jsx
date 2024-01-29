@@ -8,7 +8,7 @@ export const HomeHeader = () => {
 				<div className="home-header__text">Explore the world</div>
 			</div>
 			<div className="home-header__img">
-				<img src="./public/user.png" alt="User" />
+				<img src="/user.png" alt="User" />
 			</div>
 		</div>
 	);
