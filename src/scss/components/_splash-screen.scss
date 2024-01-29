@@ -1,0 +1,45 @@
+.splash-screen {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: linear-gradient(180deg, #0172B2 0%, #001645 100%);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 40px;
+	align-items: center;
+	transition: .5s opacity ease-in-out;
+	transition: .2s transform ease-in-out;
+
+	animation: hiddenSplash 2s forwards 2s;
+
+
+	&__img {
+		width: 157px;
+		height: 55px;
+		object-fit: cover;
+	}
+
+	&__title {
+		color: #E8E8E8;
+		text-align: center;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 150.523%;
+		font-family: 'Roboto', sans-serif;
+		max-width: 252px;
+		margin-inline: auto;
+	}
+}
+
+@keyframes hiddenSplash {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
