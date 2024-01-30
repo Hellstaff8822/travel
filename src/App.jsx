@@ -5,8 +5,10 @@ import { SplashScreen } from './components/SplashScreen';
 import { useState } from 'react';
 import { MenuIcon } from './components/Icons/MenuIcon';
 import { useLocation } from 'react-router-dom';
-import { TravelPage } from './TravelPage/TravelPage';
 import {Andes }from './TravelPage/Andes/Andes';
+import { History } from './views/History';
+import { Heart } from './views/Heart';
+import { Profile } from './views/Profile';
 
 function App() {
   const location = useLocation();
@@ -24,24 +26,26 @@ function App() {
         <>
           <Routes>
             <Route path="/" element={<Home />}></Route>
-            <Route path="/travel" element={<TravelPage/>}></Route>
             <Route path="/mountfuji" element={<MountFuji/>}></Route>
             <Route path="/andes" element={<Andes/>}></Route>
+            <Route path="/history" element={<History/>}></Route>
+            <Route path="/heart" element={<Heart/>}></Route>
+            <Route path="/profile" element={<Profile/>}></Route>
           </Routes>
           
-		  {!(currentUrl === "/travel" || currentUrl === "/mountfuji" || currentUrl === "/andes") && (
+		  {!(currentUrl === "/mountfuji" || currentUrl === "/andes") && (
 						<header>
 							<NavLink exact activeClassName="is-active" to="/">
-								<MenuIcon type="home" />
+								<MenuIcon type="home"  />
 							</NavLink>
 							<NavLink activeClassName="is-active" to="/history">
-								<MenuIcon type="history" />
+								<MenuIcon type="history"  />
 							</NavLink>
 							<NavLink activeClassName="is-active" to="/heart">
-								<MenuIcon type="heart" />
+								<MenuIcon type="heart"  />
 							</NavLink>
 							<NavLink activeClassName="is-active" to="/profile">
-								<MenuIcon type="profile" />
+								<MenuIcon type="profile"  />
 							</NavLink>
 						</header>
 					)}

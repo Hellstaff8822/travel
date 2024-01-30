@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-x: hidden;
+  padding-bottom: 56px;
 
   button {
     position: absolute;
@@ -65,7 +65,7 @@
 
   &__desc {
     text-align: center;
-    font-family: Roboto;
+    font-family: var(--ff-roboto);
     font-size: 18px;
     font-weight: 500;
     line-height: 150.188%;
@@ -89,7 +89,7 @@
     padding-bottom: 22px;
     color: #fff;
     text-align: center;
-    font-family: Roboto;
+    font-family: var(--ff-roboto);
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -113,14 +113,14 @@
   }
   &__title {
     color: #1b1b1b;
-    font-family: Inter;
+    font-family: var(--ff-inter);
     font-size: 22px;
     font-weight: 600;
   }
 
   &__text {
     color: rgba(27, 27, 27, 0.62);
-    font-family: Inter;
+    font-family: var(--ff-inter);
     font-size: 16px;
     font-weight: 600;
   }
@@ -185,7 +185,7 @@
   }
   &__text {
     color: #cac8c8;
-    font-family: Roboto;
+    font-family:var(--ff-roboto);
     font-size: 16px;
     font-weight: 400;
   }
@@ -200,14 +200,14 @@
     align-items: center;
     gap: 6px;
     color: #cac8c8;
-    font-family: Roboto;
+    font-family: var(--ff-roboto);
     font-size: 18px;
     font-weight: 400;
   }
 
   &__price {
     color: #cac8c8;
-    font-family: Roboto;
+    font-family: var(--ff-roboto);
     font-size: 26px;
     font-style: normal;
     font-weight: 500;
@@ -215,7 +215,7 @@
 
     span {
       color: #434343;
-      font-family: Roboto;
+      font-family: var(--ff-roboto);
       font-size: 20px;
       font-weight: 500;
     }
