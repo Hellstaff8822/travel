@@ -14,7 +14,7 @@ export const Andes = () => {
   };
 
   return (
-    <div className="andes">
+    <div id='andes-page-root' className="andes andes-page-root">
       <div className="andes__container">
       <div className="andes-img">
         <img src="/public/travel2.png" alt="" />

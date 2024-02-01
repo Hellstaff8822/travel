@@ -7,6 +7,13 @@
     padding: 28px;
   }
 
+  #andes-page-root.page-root {
+    @include desktop-small {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+
   .andes-img {
     width: 100%;
     height: 460px;

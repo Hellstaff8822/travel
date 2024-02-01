@@ -14,7 +14,7 @@ export const MountFuji = () => {
   };
 
   return (
-    <div className="fuji">
+    <div  id='fuji-page-root' className="fuji">
       <div className="fuji__container">
         <div className="fuji__image">
         <img src="/fuji.png" alt="fuji" />
