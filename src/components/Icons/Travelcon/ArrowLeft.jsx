@@ -1,10 +1,9 @@
 export const ArrowLeft = ({ onGoBack }) => {
   const handleContainerClick = () => {
-    // Додати логіку або викликати функцію onGoBack при кліці на контейнер
     onGoBack();
   };
   return (
-    <div className="andes__arrow" onClick={handleContainerClick}>
+    <div className="andes-img__arrow" onClick={handleContainerClick}>
       <button className='andes__arrow-button' onClick={onGoBack}></button>
        <svg
       xmlns="http://www.w3.org/2000/svg"

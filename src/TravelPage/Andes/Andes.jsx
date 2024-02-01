@@ -15,43 +15,52 @@ export const Andes = () => {
 
   return (
     <div className="andes">
-        <div className="andes__image">
-          <img src="/andespage.png" alt="andes" />
-          <ArrowLeft onGoBack={handleGoBack}/>
-        <Arhive/>
-        <AndesPage />
-        </div>
-        
-        <div className="andes-overview">
-          <div className="andes-overview__info">
-            <div className="andes-overview__title">Overview</div>
-            <div className="andes-overview__text">Details</div>
+      <div className="andes__container">
+      <div className="andes-img">
+        <img src="/public/travel2.png" alt="" />
+        <div className="andes-img__info">
+          <div className="andes-img-header">
+            <ArrowLeft onGoBack={handleGoBack} />
+            <Arhive/>
           </div>
+          <div className="andes-buttom__narrative">
+            <AndesPage/>
+          </div>
+        </div>
 
-          <div className="andes-value">
-            <div className="andes-value__hour">
-              <Hour/>8 hours
-            </div>
-            <div className="andes-value__temp">
-              <Temp />
-              16 C
-            </div>
-            <div className="andes-value__star">
-              <Stars />
-              4.5
-            </div>
+      </div>
+      <div className="andes-overview">
+        <div className="andes-overview__info">
+          <div className="andes-overview__title">Overview</div>
+          <div className="andes-overview__text">Details</div>
+        </div>
+
+        <div className="andes-value">
+          <div className="andes-value__hour">
+            <Hour />8 hours
+          </div>
+          <div className="andes-value__temp">
+            <Temp />
+            16 C
+          </div>
+          <div className="andes-value__star">
+            <Stars />
+            4.5
           </div>
         </div>
-        
-        <div className="andes__desc">
-          This vast mountain range is renowned for its remarkable diversity in
-          terms of topography and climate. It features towering peaks, active
-          volcanoes, deep canyons, expansive plateaus, and lush valleys. The
-          Andes are also home to{' '}
-        </div>
-          <a className="andes__book" href="/">
-            Book Now <Book />
-          </a>
+      </div>
+
+      <div className="andes__desc">
+        This vast mountain range is renowned for its remarkable diversity in
+        terms of topography and climate. It features towering peaks, active
+        volcanoes, deep canyons, expansive plateaus, and lush valleys. The Andes
+        are also home to{' '}
+      </div>
+      <a className="andes__book" href="/">
+        Book Now <Book />
+      </a>
+      </div>
+     
     </div>
   );
 };
