@@ -15,8 +15,6 @@ export const Andes = () => {
 
   return (
     <div className="andes">
-      <div className="andes__container">
-        
         <div className="andes__image">
           <img src="/andespage.png" alt="andes" />
           <ArrowLeft onGoBack={handleGoBack}/>
@@ -54,7 +52,6 @@ export const Andes = () => {
           <a className="andes__book" href="/">
             Book Now <Book />
           </a>
-      </div>
     </div>
   );
 };
