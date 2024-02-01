@@ -10,7 +10,7 @@ body,
 #root {
   @include desktop-small {
     display: grid;
-    grid-template-columns: 1fr 60px;
+    grid-template-columns: 1fr 45px;
   }
 }
 

@@ -111,6 +111,10 @@
     white-space: nowrap;
     overflow-x: auto;
     padding-bottom: 21px;
+    @include desktop-small{
+      justify-content: space-between;
+    }
+    
   }
 
   &__item {
@@ -121,6 +125,9 @@
     font-family: var(--ff-roboto);
     font-size: 16px;
     font-weight: 500;
+    @include desktop{
+      cursor: pointer;
+    }
 
     &.is-active {
       background: #2f2f2f;
