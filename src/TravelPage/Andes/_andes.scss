@@ -4,9 +4,9 @@
   align-items: center;
 
   &__container {
-   padding: 28px 28px 0 28px;
+    padding: 28px 28px 0 28px;
   }
-  &__text{
+  &__text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,10 +97,10 @@
     backdrop-filter: blur(20px);
     width: 331px;
     padding: 11px 12px 16px 16px;
-    @include desktop-small{
+    @include desktop-small {
       width: 500px;
     }
-    @include tablet{
+    @include tablet {
       width: 500px;
     }
     img {
@@ -156,8 +156,6 @@
         font-weight: 500;
       }
     }
-
- 
   }
 
   &__desc {
@@ -196,8 +194,8 @@
       rgba(255, 255, 255, 0.4);
     box-shadow: 0px 13px 26px -2px rgba(0, 0, 0, 0.12);
     width: 373px;
-    transition:  .2s linear ;
-    &:hover{
+    transition: 0.2s linear;
+    &:hover {
       opacity: 0.9;
     }
   }
@@ -207,7 +205,7 @@
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-  @include desktop-small{
+  @include desktop-small {
     justify-content: space-between;
   }
   &__info {
@@ -215,7 +213,7 @@
     align-items: center;
     gap: 32px;
     margin-bottom: 32px;
-    @include desktop-small{
+    @include desktop-small {
       justify-content: space-between;
     }
   }
@@ -237,7 +235,7 @@
   display: flex;
   justify-content: space-between;
   gap: 60px;
- 
+
   &__icon {
     display: flex;
     align-items: center;
