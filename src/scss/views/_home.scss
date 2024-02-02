@@ -3,7 +3,7 @@
   justify-content: space-between;
   padding: 34px 26px 0 26px;
   gap: 20px;
-  @include desktop-small{
+  @include desktop-small {
     justify-content: center;
     gap: 100px;
   }
@@ -37,14 +37,14 @@
 
 .home-filter {
   padding: 38px 26px 42px 26px;
-  @include desktop-small{
+  @include desktop-small {
     display: flex;
     justify-content: center;
   }
 
   &__container {
     position: relative;
-    @include desktop-small{
+    @include desktop-small {
       width: 55%;
       display: flex;
       justify-content: center;
@@ -93,45 +93,40 @@
 
 .home-places {
   padding: 0 26px;
-  font-family: var(--ff-roboto);
+  font-family:var(--ff-roboto);
 
   &__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    margin-bottom: 40px;
+    height: 30px;
   }
 
-  &__title {
-    color: #2f2f2f;
-    font-size: 20px;
-    font-weight: 600;
-    font-family: var(--ff-popins);
-  }
-
+  &__title,
   &__view-all {
     color: #888;
+    font-family: Roboto;
     font-size: 16px;
     font-weight: 600;
-   
-  
+    line-height: normal;
+    transition: 0.2s all ease-in-out;
+    cursor: pointer;
   }
 
-  .home-places__title.active,
-.home-places__view-all.active {
-  color: black;  /* Змініть це на бажаний колір для активних посилань */
-}
+  .is-active-gruop {
+    color: #2f2f2f;
+    font-family: Poppins;
+    font-size: 20px;
+  }
 
   &__list {
     display: flex;
+    justify-content: space-between;
     gap: 25px;
     white-space: nowrap;
     overflow-x: auto;
-    padding-bottom: 21px;
-    @include desktop-small {
-      justify-content: space-between;
-    }
+    overflow-y: hidden;
   }
 
   &__item {
@@ -139,12 +134,11 @@
     background: #fbfbfb;
     padding: 18px 21px;
     color: #c5c5c5;
-    font-family: var(--ff-roboto);
+    font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
-    @include desktop {
-      cursor: pointer;
-    }
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
 
     &.is-active {
       background: #2f2f2f;
