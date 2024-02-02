@@ -1,12 +1,13 @@
 import { useState } from "react";
 
 export const HomePlaces = () => {
+	
 	const [tab, setTab] = useState(1);
 	return (
 		<div className="home-places">
 			<div className="home-places__header">
-				<div className="home-places__title">Popular places</div>
-				<div className="home-places__view-all">View all</div>
+				<a href='/' className="home-places__title">Popular places</a>
+				<a href='/' className="home-places__view-all">View all</a>
 			</div>
 			<div className="home-places__list">
 				<div

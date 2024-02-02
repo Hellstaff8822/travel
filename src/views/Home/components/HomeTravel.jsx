@@ -32,47 +32,47 @@ export const HomeTravel = () => {
         initial="hidden"
         animate="visible">
         <motion.li variants={item} className="home-travel-item">
+          <HeartIcon />
           <Link to="/mountfuji">
-            <HeartIcon />
             <img src="/travel.png" alt="travel" />
             <TravelFuji />
           </Link>
         </motion.li>
 
         <motion.li variants={item} className="home-travel-item">
+          <HeartIcon />
           <Link to="/andes">
-            <HeartIcon />
             <img src="/travel-img.png" alt="travel" />
             <TravelAndes />
           </Link>
         </motion.li>
 
         <motion.li variants={item} className="home-travel-item">
+          <HeartIcon />
           <Link to="/mountfuji">
-            <HeartIcon />
             <img src="/travel.png" alt="travel" />
             <TravelFuji />
           </Link>
         </motion.li>
 
         <motion.li variants={item} className="home-travel-item">
+          <HeartIcon />
           <Link to="/andes">
-            <HeartIcon />
             <img src="/travel-img.png" alt="travel" />
             <TravelAndes />
           </Link>
         </motion.li>
 
         <motion.li variants={item} className="home-travel-item">
+          <HeartIcon />
           <Link to="/mountfuji">
-            <HeartIcon />
             <img src="/travel.png" alt="travel" />
             <TravelFuji />
           </Link>
         </motion.li>
         <motion.li variants={item} className="home-travel-item">
+          <HeartIcon />
           <Link to="/andes">
-            <HeartIcon />
             <img src="/travel-img.png" alt="travel" />
             <TravelAndes />
           </Link>
