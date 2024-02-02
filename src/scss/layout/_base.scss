@@ -5,14 +5,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
-html,
-body,
-#root {
-  @include desktop-small {
-    display: grid;
-    grid-template-columns: 1fr 45px;
-  }
-}
+
 
 
 
@@ -27,14 +20,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 64px;
-  @include desktop-small {
-    position: static;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    gap: 150px;
-  }
+  
 }
 li {
   list-style: none;
@@ -53,7 +39,8 @@ p {
 
 .home {
   padding-bottom: 65px;
-  @include desktop-small {
-    padding: 0;
-  }
+}
+
+.arrow{
+
 }

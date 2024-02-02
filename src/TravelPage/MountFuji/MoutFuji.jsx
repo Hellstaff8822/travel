@@ -14,24 +14,30 @@ export const MountFuji = () => {
   };
 
   return (
-    <div  id='fuji-page-root' className="fuji">
+    <div className="fuji">
       <div className="fuji__container">
-        <div className="fuji__image">
-        <img src="/fuji.png" alt="fuji" />
-        <ArrowLeft onGoBack={handleGoBack}/>
-        <Arhive/>
-        <FujiPage />
+        <div className="fuji-img">
+          <img src="/travel1.png" alt="fuji" />
+          <div className="fuji-img__info">
+            <div className="fuji-img-header">
+              <ArrowLeft onGoBack={handleGoBack} />
+              <Arhive />
+            </div>
+            <div className="fuji-buttom__narrative">
+              <FujiPage />
+            </div>
+          </div>
         </div>
 
         <div className="fuji-overview">
           <div className="fuji-overview__info">
-          <div className="fuji-overview__title">Overview</div>
+            <div className="fuji-overview__title">Overview</div>
             <div className="fuji-overview__text">Details</div>
           </div>
 
           <div className="fuji-value">
             <div className="fuji-value__hour">
-              <Hour/>8 hours
+              <Hour />8 hours
             </div>
             <div className="fuji-value__temp">
               <Temp />
@@ -43,16 +49,17 @@ export const MountFuji = () => {
             </div>
           </div>
         </div>
-
+        <div className="fuji__text">
         <div className="fuji__desc">
           This vast mountain range is renowned for its remarkable diversity in
           terms of topography and climate. It features towering peaks, active
           volcanoes, deep canyons, expansive plateaus, and lush valleys. The
           Andes are also home to{' '}
         </div>
-          <a className="fuji__book" href="/">
-            Book Now <Book />
-          </a>
+        <a className="fuji__book" href="/">
+          Book Now <Book />
+        </a>
+        </div>
       </div>
     </div>
   );

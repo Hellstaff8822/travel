@@ -3,8 +3,8 @@ export const ArrowLeft = ({ onGoBack }) => {
     onGoBack();
   };
   return (
-    <div className="andes-img__arrow" onClick={handleContainerClick}>
-      <button className='andes__arrow-button' onClick={onGoBack}></button>
+    <div className="arrow" onClick={handleContainerClick}>
+      <button className='arrow__button' onClick={onGoBack}></button>
        <svg
       xmlns="http://www.w3.org/2000/svg"
       width="8"

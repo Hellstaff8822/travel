@@ -1,6 +1,6 @@
 export const Arhive = () => {
   return (
-    <div className="andes-img__arhive">
+    <div className="arhive">
       <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"

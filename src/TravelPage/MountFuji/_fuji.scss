@@ -2,66 +2,174 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 56px;
-
-  button {
-    position: absolute;
-    top: 46px;
-    left: 21px;
-  }
-
-  &__arrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 46px;
-    left: 21px;
-    background: rgba(29, 29, 29, 0.4);
-    backdrop-filter: blur(20px);
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-
-  &__arrow-button {
-    border: none;
-    background: none;
-    padding: 0;
-    cursor: pointer;
-  }
-  &__arhive {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 46px;
-    right: 19px;
-    background: rgba(29, 29, 29, 0.4);
-    backdrop-filter: blur(20px);
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-
   &__container {
+    padding: 28px;
+  }
+  &__text{
     display: flex;
     flex-direction: column;
-    padding-right: 28px;
-    padding-left: 28px;
+    align-items: center;
   }
 
-  &__image {
-    position: relative;
-    img {
-      width: 560px;
-      border-radius: 25px;
-    }
-    padding-top: 28px;
-    padding-bottom: 48px;
+  .fuji-img {
+    
+
+    
+    
+
+   
   }
+
+  
+
+
+  
+  .fuji-img {
+    width: 100%;
+    height: 460px;
+    border-radius: 25.5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 38px;
+    img {
+      border-radius: 30px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+    &-header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+		&__info {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      left: 0;
+      top: 0;
+      padding: 19px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+		}
+
+    .arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(29, 29, 29, 0.4);
+      backdrop-filter: blur(20px);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      z-index: 1;
+      button {
+        text-decoration: none;
+        color: initial;
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+      }
+    }
+    .arhive {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 46px;
+      right: 19px;
+      background: rgba(29, 29, 29, 0.4);
+      backdrop-filter: blur(20px);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+   
+}
+
+.fuji-buttom {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 1;
+  border-radius: 15px;
+  background: rgba(29, 29, 29, 0.3);
+  box-shadow: 0px 5px 9px 0px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  width: 331px;
+  padding: 11px 12px 16px 16px;
+  @include desktop-small{
+    width: 500px;
+  }
+  @include tablet{
+    width: 500px;
+  }
+  img {
+    width: 16px;
+    height: 16px;
+  }
+  
+  &__info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  &__title {
+    color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  }
+
+  &__text {
+    color: #cac8c8;
+    font-family: var(--ff-roboto);
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &__desc {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__city {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #cac8c8;
+    font-family: var(--ff-roboto);
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__price {
+    color: #cac8c8;
+  font-family: var(--ff-roboto);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  span {
+    color: #434343;
+    font-family: var(--ff-roboto);
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+}
+
 
   &__desc {
     text-align: center;
@@ -99,7 +207,6 @@
       rgba(255, 255, 255, 0.4);
     box-shadow: 0px 13px 26px -2px rgba(0, 0, 0, 0.12);
     width: 373px;
-   
   }
 }
 .fuji-overview {
@@ -208,8 +315,8 @@
     font-family: var(--ff-roboto);
     font-size: 18px;
     font-weight: 400;
-    img{
-        width: 22px;
+    img {
+      width: 22px;
     }
   }
 
@@ -223,7 +330,7 @@
 
     span {
       color: #434343;
-      font-family:var(--ff-roboto);
+      font-family: var(--ff-roboto);
       font-size: 20px;
       font-weight: 500;
     }
